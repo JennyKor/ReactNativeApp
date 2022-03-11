@@ -15,8 +15,8 @@ export default function App() {
   const [postToEdit, setPostToEdit] = useState('');
 
 async function fetchPosts(){
-  //await fetch("http://10.0.2.2:8080/rest/postservice/getPostsById/" + userId)
-  await fetch("http://chatter-328809.appspot.com//rest/chatter/getPostsById/" + userId)
+  await fetch("http://10.0.2.2:8080/rest/postservice/getPostsById/" + userId)
+  //await fetch("http://chatter-328809.appspot.com//rest/chatter/getPostsById/" + userId)
   .then((response) => response.json())
   .then((json) => setPostContent(json));
 }
