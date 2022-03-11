@@ -22,8 +22,8 @@ async function fetchPosts(){
 }
 
 async function updatePost(updatedPost){
-  //await fetch("http://10.0.2.2:8080/rest/postservice/updatepost",
-  await fetch("http://chatter-328809.appspot.com//rest/chatter/updatepost",
+  await fetch("http://10.0.2.2:8080/rest/postservice/updatepost",
+  //await fetch("http://chatter-328809.appspot.com//rest/chatter/updatepost",
   {
     method:'PUT',
     headers:{ 'Content-Type': 'application/json'},
@@ -35,8 +35,8 @@ async function updatePost(updatedPost){
 
 const deletePostFromNet = async(post) => {
   console.log("To be deleted: " + post);
-  //await fetch("http://10.0.2.2:8080/rest/postservice/deletepost/" + post,
-  await fetch("https://chatter-328809.appspot.com/rest/chatter/deletepost/" + post,
+  await fetch("http://10.0.2.2:8080/rest/postservice/deletepost/" + post,
+  //await fetch("https://chatter-328809.appspot.com/rest/chatter/deletepost/" + post,
   {
     method: 'DELETE',
   });
