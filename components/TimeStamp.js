@@ -17,7 +17,7 @@ const TimeStamp=(props)=>{
     var date = new Date(); // getting current time of the browser/machine
     var utc = date.getTime() + (date.getTimezoneOffset() * 60000); // Converting it to utc time
     
-    //USE IF ON LOCAL. Also change variable utc to fidate in the following if sentences.
+    //USE IF ON LOCAL. Also change variable utc to fidate in the following if cases.
     //var fidate = new Date(utc + (3600000 * 3)); // Getting the current time in Finland
 
     //console.log(fidate);
